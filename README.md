@@ -6,9 +6,9 @@
 /system reset-configuration no-defaults=yes skip-backup=yes
 ```
 ```
-/system clock set time-zone-name US/Eastern
-/system clock set date jun/06/2022
-/system clock set time 03:07:00
+/system clock set time-zone-name Asia/Singapore
+/system clock set date Jan/07/2023
+/system clock set time 12:52:00
 /system identity set name="Mikrotik"
 ```
 ```
