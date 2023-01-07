@@ -72,6 +72,8 @@
 ```
 ## Other useful commands
 ```
+/system package update check-for-updates
+/system package update install
 /system package update print
 /system health print
 /system resource print
