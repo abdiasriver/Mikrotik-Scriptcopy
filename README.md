@@ -46,17 +46,12 @@
 /interface wireless spectral-history wlan1
 /ping 8.8.8.8
 ```
-## Now we will bridge that interface to Ethernet port 1: At this point you should be able to establish a Wi-Fi connection and (assuming the ping command worked) connect to the Internet.
 ```
 /interface bridge port add bridge=bridge1 interface=wlan1
-```
-## If your device also supports 5 GHz you will set up and bridge a second wireless interface:
-```
 /interface wireless
  set [ find default-name=wlan2 ] band=5ghz-a/n/ac channel-width=20mhz disabled=no \
  wireless-protocol=802.11 distance=indoors installation=indoor frequency=auto \
  mode=ap-bridge default-forwarding=no \
  ssid="SSID goes here" station-roaming=enabled
-
 /interface bridge port add bridge=bridge1 interface=wlan2
 ```
