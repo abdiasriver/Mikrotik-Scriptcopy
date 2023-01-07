@@ -38,15 +38,37 @@
 /system routerboard upgrade
 /system reboot
 ```
-### Add new user and disable admin
-```commandline
-/user add name=admin group=full password=admin123
-/user disable 0
+## Wifi Policy | Wifi Interface
 ```
-### DNS Settings
-```commandline
-/ip dns set allow-remote-requests=no
-/ip dns set servers=8.8.8.8,8.8.4.4
+/interface wireless security-profiles
+ set [ find default=yes ] \
+ authentication-types=wpa2-psk mode=dynamic-keys \
+ supplicant-identity=MikroTik \
+ wpa-pre-shared-key="Wi-Fi password goes here" \
+ wpa2-pre-shared-key="Wi-Fi password goes here"
+```
+## 2.4Gghz 802.211b Interface
+```
+/interface wireless
+ set [ find default-name=wlan1 ] band=2ghz-b/g/n channel-width=20mhz disabled=no \
+ wireless-protocol=802.11 distance=indoors installation=indoor frequency=auto \
+ mode=ap-bridge default-forwarding=no \
+ ssid="SSID goes here" station-roaming=enabled
+ ```
+ ## Bridge Interface to Ethernet Port1
+
+```
+/interface bridge port add bridge=bridge1 interface=wlan1
+```
+## 5Ghz
+```
+/interface wireless
+ set [ find default-name=wlan2 ] band=5ghz-a/n/ac channel-width=20mhz disabled=no \
+ wireless-protocol=802.11 distance=indoors installation=indoor frequency=auto \
+ mode=ap-bridge default-forwarding=no \
+ ssid="SSID goes here" station-roaming=enabled
+
+/interface bridge port add bridge=bridge1 interface=wlan2
 ```
 ## Other useful commands
 ```
@@ -63,12 +85,13 @@
 /interface wireless spectral-history wlan1
 /ping 8.8.8.8
 ```
+### Add new user and disable admin
+```commandline
+/user add name=admin group=full password=admin123
+/user disable 0
 ```
-/interface bridge port add bridge=bridge1 interface=wlan1
-/interface wireless
- set [ find default-name=wlan2 ] band=5ghz-a/n/ac channel-width=20mhz disabled=no \
- wireless-protocol=802.11 distance=indoors installation=indoor frequency=auto \
- mode=ap-bridge default-forwarding=no \
- ssid="SSID goes here" station-roaming=enabled
-/interface bridge port add bridge=bridge1 interface=wlan2
+### DNS Settings
+```commandline
+/ip dns set allow-remote-requests=no
+/ip dns set servers=8.8.8.8,8.8.4.4
 ```
