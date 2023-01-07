@@ -12,6 +12,7 @@
 /ip dns set servers=8.8.8.8,8.8.4.4
 ```
 # Other useful commands
+```
 /system package update print
 /system health print
 /system resource print
@@ -24,7 +25,7 @@
 /interface wireless spectral-scan wlan1
 /interface wireless spectral-history wlan1
 /ping 8.8.8.8
-
+```
 ## If your device also supports 5 GHz you will set up and bridge a second wireless interface:
 ```
 /interface wireless
