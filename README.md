@@ -4,12 +4,14 @@
 
 ```
 /system reset-configuration no-defaults=yes skip-backup=yes
-
+```
+```
 /system clock set time-zone-name US/Eastern
 /system clock set date jun/06/2022
 /system clock set time 03:07:00
 /system identity set name="upstairs_closet"
-
+```
+```
 /ip service disable telnet,ftp,www,www-ssl,winbox,api,api-ssl
 /ip service enable ssh
 /ip service print
