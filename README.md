@@ -18,11 +18,26 @@
 /ip dns set allow-remote-requests=no
 /ip neighbor discovery-settings set discover-interface-list=none
 ```
-
-
-
-
-
+```
+/interface bridge add name=bridge1 \
+ admin-mac=[/interface/ethernet/get value-name=mac-address ether1] \
+ auto-mac=no
+/interface bridge port add bridge=bridge1 interface=ether1
+/ip dhcp-client add disabled=no interface=bridge1
+```
+## Upgrade RouterOS:
+```
+/system package update
+ set channel=long-term
+ check-for-updates
+ download
+/system reboot
+```
+## BIOS Update
+```
+/system routerboard upgrade
+/system reboot
+```
 ### Add new user and disable admin
 ```commandline
 /user add name=admin group=full password=admin123
