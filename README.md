@@ -9,7 +9,7 @@
 /system clock set time-zone-name US/Eastern
 /system clock set date jun/06/2022
 /system clock set time 03:07:00
-/system identity set name="upstairs_closet"
+/system identity set name="Mikrotik"
 ```
 ```
 /ip service disable telnet,ftp,www,www-ssl,winbox,api,api-ssl
