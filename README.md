@@ -1,4 +1,4 @@
-# Mikrotik-Script
+# MikrtoTik / RouterOS Scripts
 
 ## Mikrotik commands
 ### Add new user and disable admin
