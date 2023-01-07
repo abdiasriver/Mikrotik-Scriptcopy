@@ -11,7 +11,7 @@
 /ip dns set allow-remote-requests=no
 /ip dns set servers=8.8.8.8,8.8.4.4
 ```
-# Other useful commands
+## Other useful commands
 ```
 /system package update print
 /system health print
