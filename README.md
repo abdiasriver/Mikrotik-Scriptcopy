@@ -107,13 +107,21 @@ foreach i in=[/system logging action find] do={
     } on-error={}
 }
 ```
+> ⚠️ **Warning**: Some details changed. So see the presentation, then follow
+> the steps below for up-to-date commands.
 
 ## References:
-- https://buananetpbun.github.io/
-- https://help.mikrotik.com/docs/display/ROS/First+Time+Configuration
-- https://wiki.mikrotik.com/wiki/Manual:Securing_Your_Router
-- https://help.mikrotik.com/docs/display/ROS/Wireless+Interface
-- https://mer.vin/2019/12/mikrotik-default-config/
-- https://forum.mikrotik.com/viewtopic.php?t=143446#p763655
-- https://forum.mikrotik.com/viewtopic.php?t=143446#p873652
- https://forum.mikrotik.com/viewtopic.php?t=123233#p606442
+
+- **1.** Firmware Mikrotik (RouterOS & SwitchOS) and Winbox for Windows: https://mikrotik.com/download
+- **2.** How to configure Mikrotik OPENVPN Server: https://www.gkhan.in/how-to-configure-mikrotik-openvpn-server/
+- **3.** RouterOS Scripts: https://github.com/eworm-de/routeros-scripts
+- **4.** SMTP Test Tool https://www.gmass.co/smtp-test
+- **5.** https://buananetpbun.github.io/
+- **6.** https://help.mikrotik.com/docs/display/ROS/First+Time+Configuration
+- **7.** https://wiki.mikrotik.com/wiki/Manual:Securing_Your_Router
+- **8.** https://help.mikrotik.com/docs/display/ROS/Wireless+Interface
+- **9.** https://mer.vin/2019/12/mikrotik-default-config/
+- **10.** https://forum.mikrotik.com/viewtopic.php?t=143446#p763655
+- **11.** https://forum.mikrotik.com/viewtopic.php?t=143446#p873652
+- **12.** https://forum.mikrotik.com/viewtopic.php?t=123233#p606442
+
