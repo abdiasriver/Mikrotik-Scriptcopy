@@ -10,7 +10,7 @@ User: youremailaddress@gmail.com
 Password: your email address password
 ```
 ## **Step 2.** Open Your Gmail Account
-Got to ```https://myaccount.google.com/lesssecureapps``` then Allow the secure apps.
+Got to https://myaccount.google.com/lesssecureapps then Allow the secure apps.
 
 ## **Step 3.** Send Email Test
 ```
