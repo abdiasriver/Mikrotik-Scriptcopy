@@ -1,4 +1,4 @@
-# Mikrotik Toturials
+# Mikrotik - SMTP Server Setup
 
 ## **Step 1.** Setup Email in Mikrotik
 ```
