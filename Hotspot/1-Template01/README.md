@@ -6,4 +6,4 @@
 
 ![Login](login.png)
 
-Login templates [here]<a href="https://www.dropbox.com/s/z1rh9wntrp8jmb6/Grasveld.zip?dl=0">Download via Dropbox</a>
+Login templates here: <a href="https://www.dropbox.com/s/z1rh9wntrp8jmb6/Grasveld.zip?dl=0">Download via Dropbox</a>
